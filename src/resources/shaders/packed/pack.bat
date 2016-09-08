@@ -1,0 +1,1 @@
+shader_minifier.exe --preserve-externals fract_FS.glsl fract_VS.glsl greets_FS.glsl greets_VS.glsl logo_FS.glsl logo_VS.glsl menger_FS.glsl menger_VS.glsl mixer_FS.glsl phong_FS.glsl phong_VS.glsl plasma_FS.glsl plasmaEffect_FS.glsl plasmaEffect_VS.glsl rtunnel_FS.glsl tv_FS.glsl tv_VS.glsl tvNN_FS.glsl water_FS.glsl water_VS.glsl

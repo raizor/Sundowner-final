@@ -1,0 +1,7 @@
+debug file
+-------------------------
+INIT SHADER: Fract
+INIT SHADER: Tunnel
+INIT SHADER: Mixer
+INIT SHADER: Fx
+-------------------------

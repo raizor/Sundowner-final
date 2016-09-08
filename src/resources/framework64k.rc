@@ -1,0 +1,148 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 183, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_STATICEDGE
+CAPTION "Sundowner - Display Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,87,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,119,87,50,16
+    LTEXT           "Resolution",IDC_STATIC,15,8,49,8
+    COMBOBOX        IDC_COMBO_RES,15,17,152,67,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Fullscreen?",IDC_CHECK_FS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,37,152,10
+    CONTROL         "Noise and Scanlines?",IDC_CHECK_NOISE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,51,151,10
+    CONTROL         "Pre-Render Audio?",IDC_CHECK_RENDERAUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,65,151,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_PNG_LOGOFONT        PNG                     "images/fontlogo.png"
+IDR_PNG_LOGO            PNG                     "images/logo.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// VSHADER
+//
+
+IDS_SHADER_MENGER_VERT  VSHADER                 "shaders/menger_VS.glsl"
+IDS_SHADER_FRACTAL_VERT VSHADER                 "shaders/fract_VS.glsl"
+IDS_SHADER_PFX_VERT     VSHADER                 "shaders/plasmaEffect_VS.glsl"
+IDS_SHADER_LOGO_VERT    VSHADER                 "shaders/logo_VS.glsl"
+IDS_SHADER_TV_VERT      VSHADER                 "shaders/tv_VS.glsl"
+IDS_SHADER_PHONG_VERT   VSHADER                 "shaders/phong_VS.glsl"
+IDS_SHADER_GREETS_VERT  VSHADER                 "shaders/greets_VS.glsl"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// FSHADER
+//
+
+IDS_SHADER_MENGER_FRAG  FSHADER                 "shaders/menger_FS.glsl"
+IDS_SHADER_FRACTAL_FRAG FSHADER                 "shaders/fract_FS.glsl"
+IDS_SHADER_PFX_FRAG     FSHADER                 "shaders/plasmaEffect_FS.glsl"
+IDS_SHADER_PLASMA_FRAG  FSHADER                 "shaders/plasma_FS.glsl"
+IDS_SHADER_TUNNEL_FRAG  FSHADER                 "shaders/rtunnel_FS.glsl"
+IDS_SHADER_MIXER_FRAG   FSHADER                 "shaders/mixer_FS.glsl"
+IDS_SHADER_LOGO_FRAG    FSHADER                 "shaders/logo_FS.glsl"
+IDS_SHADER_TV_FRAG      FSHADER                 "shaders/tv_FS.glsl"
+IDS_SHADER_PHONG_FRAG   FSHADER                 "shaders/phong_FS.glsl"
+IDS_SHADER_GREETS_FRAG  FSHADER                 "shaders/greets_FS.glsl"
+IDS_SHADER_TVNN_FRAG    FSHADER                 "shaders/tvnn_FS.glsl"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "images/HEARTS.ICO"
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
