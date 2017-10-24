@@ -46,6 +46,7 @@
     <ProjectName>Sundowner</ProjectName>
     <ProjectGuid>{91B645FD-82AF-44D4-9D0A-CD74BC0CAC3C}</ProjectGuid>
     <RootNamespace>phenomenaEclipse</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -248,7 +249,7 @@
       <OutputFile>.\bin/v8/x86/Debug/intro.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>xcopy  G:\Projects\Democoding\Sundowner_final_2\src\resources\shaders\*.glsl G:\Projects\Democoding\Sundowner_final_2\src\resources\shaders\packed\ /y</Command>
+      <Command>xcopy  $(SolutionDir)src\resources\shaders\*.glsl $(SolutionDir)src\resources\shaders\packed\ /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

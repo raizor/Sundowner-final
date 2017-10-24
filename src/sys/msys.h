@@ -15,6 +15,8 @@
 #include "msys_memfile.h"
 #include "msys_globals.h"
 #include "msys_win32.h"
+#include "msys_debug.h"
+#include "msys_malloc.h"
 #include "resSelector.h"
 #include <math.h>
 

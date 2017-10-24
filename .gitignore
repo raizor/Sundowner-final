@@ -86,3 +86,12 @@ release/
 ipch/
 *.sdf
 
+exe/deb.ilk
+
+#exclusions
+!4klang.obj
+!MSVCRT_VS6.LIB
+.vs/Sundowner/v15/Browse.VC.opendb
+.vs/Sundowner/v15/Browse.VC.db
+.vs/Sundowner/v15/.suo
+Sundowner.vcxproj.user

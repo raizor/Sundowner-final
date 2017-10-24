@@ -111,7 +111,7 @@ static const char msg_wait[]   = "wait while loading...";
 static const char msg_error[] = "intro_init()!\n\n"\
                              "  no memory?\n"\
                              "  no music?\n"\
-                             "  no sjades?";
+                             "  no shaders?";
 static const char wndclass[] = "...";
 
 int loTime = 10000;
@@ -427,9 +427,9 @@ static void DrawTime( WININFO *info, float t )
 
     if( !(frame&3) )
     {
-        m = msys_ifloorf( t/60.0f );
-        s = msys_ifloorf( t-60.0f*(float)m );
-        c = msys_ifloorf( t*100.0f ) % 100;
+        m = (int)floorf( t/60.0f );
+        s = (int)floorf( t-60.0f*(float)m );
+        c = (int)floorf( t*100.0f ) % 100;
 
 		long tot = 0;
 		for(int i=0; i<60; i++)
@@ -543,7 +543,7 @@ int WINAPI WinMain( HINSTANCE instance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     //   info->full++;
 
 	//globalScreenInfo.fullscreen =1;
-	globalScreenInfo.fullscreen = 1;//( MessageBox( 0, "Run Fullscreen?", wndclass, MB_YESNO|MB_ICONQUESTION)==IDYES );
+	globalScreenInfo.fullscreen = 0;//( MessageBox( 0, "Run Fullscreen?", wndclass, MB_YESNO|MB_ICONQUESTION)==IDYES );
 	
 	if (globalScreenInfo.fullscreen)
 	{
@@ -566,7 +566,7 @@ int WINAPI WinMain( HINSTANCE instance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	
 
 	wininfo.screenInfo = &globalScreenInfo;
-	SelectResolution(instance);
+	//SelectResolution(instance);
 
     globalScreenInfo.aspect = (float)globalScreenInfo.width / (float)globalScreenInfo.height;
 
